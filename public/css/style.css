@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #ffffff;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.8rem/1 "Nunito", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+
+header img {
+  height: 25rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/* SECTION 1 */
+
+.cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta article {
+  margin-bottom: 4rem;
+
+  min-width: 30rem;
+  width: 49%;
+
+  margin-top: 1rem;
+}
+
+.cta article p {
+  margin: 2rem 0 2rem 0;
+}
+
+.cta a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3rem;
+  background: rgb(62, 132, 224);
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+
+/* SECTION 2 */
+
+.notices {
+  text-align: center;
+}
+
+.ultimos-anuncios {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.notices h3 {
+  color: darkred;
+}
+
+.notices article h4 {
+  margin-top: 3rem;
+}
+
+.notices article p {
+  margin-top: 0.5rem;
+}
+
+.notices article p.lorem {
+  margin-bottom: 2rem;
+}
+
+.notices article a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3rem;
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 10rem;
+  color: #666;
+  border-top: 1px solid #666;
+}
+
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+
+  padding: 3rem 0;
+}
+
+@media (max-width: 700px) {
+  .cta article {
+    width: 100%;
+  }
+
+  .ultimos-anuncios {
+    grid: auto / auto;
+  }
+}

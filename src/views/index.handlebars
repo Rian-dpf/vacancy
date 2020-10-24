@@ -1,0 +1,36 @@
+<div class="container">
+  <header>
+    <a href="/">
+      <img src="/img/vacancy.png" alt="Logo" />
+    </a>
+  </header>
+
+  <section class="cta">
+    <article>
+      <h2>Anuncie suas vagas</h2>
+      <p>Cadastre uma vaga e encontre profissionais perto de você.</p>
+      <p>
+        <a href="/cadastro">Cadastrar uma vaga</a>
+      </p>
+    </article>
+  </section>
+
+  <section class="notices">
+    <h3>Últimos anúncios de vagas</h3>
+    <div class="ultimos-anuncios">
+      <article class="notice">
+        {{#each vagas}}
+        <h4>{{dataValues.titulo}}</h4>
+        <p><strong>{{dataValues.cidade}}</strong></p>
+        <p class="lorem">
+          {{dataValues.descricao}}
+        </p>
+        <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+        {{/each}}
+      </article>
+    </div>
+  </section>
+  <footer>
+    <p><strong>&copy; VACANCY </strong> - Rian dos Passos</p>
+  </footer>
+</div>

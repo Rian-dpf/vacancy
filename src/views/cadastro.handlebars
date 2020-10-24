@@ -1,0 +1,28 @@
+<div class="container">
+  <header>
+    <a href="/">
+      <img src="/img/vacancy.png" alt="Logo" />
+    </a>
+  </header>
+  <section class="form">
+    <header class="container">
+      <h2>Cadastre sua vaga de voluntariado</h2>
+    </header>
+    <form action="save-vaga" method="POST" class="container">
+      <input type="text" name="titulo" class="col-full" placeholder="Informe o titulo da vaga" />
+
+      <textarea name="descricao" placeholder="Informe a descrição da vaga" rows="4"></textarea>
+
+      <div class="row">
+        <input type="text" name="cidade" class="col-half" placeholder="Informe a cidade" />
+
+        <input type="text" name="email" class="col-half" placeholder="Informe o email" />
+
+        <button type="submit" class="btn btn-green">Enviar anúncio</button>
+      </div>
+    </form>
+  </section>
+  <footer>
+    <p><strong>&copy; VACANCY </strong> - Rian dos Passos</p>
+  </footer>
+</div>

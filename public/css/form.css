@@ -1,0 +1,82 @@
+.form-busca form {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/*formulário*/
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #666;
+}
+textarea:focus {
+  border: 2px solid #666;
+}
+
+input.col-full,
+textarea {
+  width: 100%;
+}
+
+input.col-half {
+  width: 100%;
+}
+
+input.col-half:first-child {
+  margin-right: 1%;
+}
+
+input.col-half:last-child {
+  width: 100%;
+}
+
+/* button {
+  margin: 5px 5px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3rem;
+  background: rgb(62, 132, 224);
+
+  padding: 0.5rem 1rem;
+
+  cursor: pointer;
+
+  outline: none;
+} */
+
+.notice p,
+h4 {
+  margin-bottom: 20px;
+}
+
+/** Media Query para telas de até 600px de largura*/
+@media (max-width: 600px) {
+  input.col-half {
+    width: 100%;
+    flex-grow: 1;
+  }
+  input.col-half:first-child {
+    margin-right: 0;
+  }
+}
